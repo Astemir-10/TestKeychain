@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E13D6F488301A3C26150A96 /* Pods_TestKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E284F9EBE0774B333B07D87B /* Pods_TestKeychain.framework */; };
 		E2421DE525C2AFA700633EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2421DE425C2AFA700633EF2 /* AppDelegate.swift */; };
 		E2421DE725C2AFA700633EF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2421DE625C2AFA700633EF2 /* SceneDelegate.swift */; };
 		E2421DE925C2AFA700633EF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2421DE825C2AFA700633EF2 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7556D77CC14B4A52A5EA0066 /* Pods-TestKeychain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKeychain.debug.xcconfig"; path = "Target Support Files/Pods-TestKeychain/Pods-TestKeychain.debug.xcconfig"; sourceTree = "<group>"; };
+		D8965224B2E37DC835EDB491 /* Pods-TestKeychain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKeychain.release.xcconfig"; path = "Target Support Files/Pods-TestKeychain/Pods-TestKeychain.release.xcconfig"; sourceTree = "<group>"; };
 		E2421DE125C2AFA700633EF2 /* TestKeychain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKeychain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2421DE425C2AFA700633EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2421DE625C2AFA700633EF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		E2421DED25C2AFAB00633EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2421DF025C2AFAB00633EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2421DF225C2AFAB00633EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E284F9EBE0774B333B07D87B /* Pods_TestKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E13D6F488301A3C26150A96 /* Pods_TestKeychain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83C17BF848CFC5E13F471F97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7556D77CC14B4A52A5EA0066 /* Pods-TestKeychain.debug.xcconfig */,
+				D8965224B2E37DC835EDB491 /* Pods-TestKeychain.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D23FD208E5D0DA76A7B089CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E284F9EBE0774B333B07D87B /* Pods_TestKeychain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2421DD825C2AFA700633EF2 = {
 			isa = PBXGroup;
 			children = (
 				E2421DE325C2AFA700633EF2 /* TestKeychain */,
 				E2421DE225C2AFA700633EF2 /* Products */,
+				83C17BF848CFC5E13F471F97 /* Pods */,
+				D23FD208E5D0DA76A7B089CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2421DF525C2AFAB00633EF2 /* Build configuration list for PBXNativeTarget "TestKeychain" */;
 			buildPhases = (
+				1A027CF0FE6422B1CEDD70D4 /* [CP] Check Pods Manifest.lock */,
 				E2421DDD25C2AFA700633EF2 /* Sources */,
 				E2421DDE25C2AFA700633EF2 /* Frameworks */,
 				E2421DDF25C2AFA700633EF2 /* Resources */,
+				CD2E45FEF33DA595AFBAB4F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A027CF0FE6422B1CEDD70D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestKeychain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD2E45FEF33DA595AFBAB4F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestKeychain/Pods-TestKeychain-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestKeychain/Pods-TestKeychain-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestKeychain/Pods-TestKeychain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2421DDD25C2AFA700633EF2 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		E2421DF625C2AFAB00633EF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7556D77CC14B4A52A5EA0066 /* Pods-TestKeychain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		E2421DF725C2AFAB00633EF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8965224B2E37DC835EDB491 /* Pods-TestKeychain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
