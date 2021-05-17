@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         let keychain = Keychain(service: "product.astema")
         if let value = try? keychain.get("Astema") {
             print("GET DATA IN KEYCHAN \n-----------")
-            print("In keychain found value -- \(value) -- by key # \("Astema") #")
+            print("In keychain found value -- \(value) -- by key # \("") #")
         } else {
             print("SAVING DATA IN KEYCHAN \n-----------")
             keychain["Astema"] = "KEYKEY"
